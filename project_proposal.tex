@@ -1,0 +1,29 @@
+%This is the project proposal for ORIE 4741.
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+\section*{One Day Ahead Wind Speed Prediction}
+\subsection*{Team Name: Wind Predictor} 
+{\bf Members: Taylor Wright (tew36@cornell.edu), Bo Yang (by57@cornell.edu)}\\
+
+The goal of the project is to develop a statistical model to predict one day ahead wind speed.\\
+
+Wind prediction is important for both energy and environment concerns. As a renewable energy, the main challenge in implementing it into the grid is the intermittency, which could bring a lot of problems such as market designs, real-time grid operations, capacity of transmission system, energy storage planning and scheduling, and optimal reductions in greenhouse gas emissions of entire power system.  With regard to atmospheric environment, wind speed, direction, and air temperature gradients interact with the physical features of the landscape to determine the movement and dispersal of air pollutants, which are related to health and regulation issues.  If future wind information could be accurately predicted, many of these problems could be overcome and/or addressed. For instance, a good wind speed forecast can help to develop well-functioning hour-ahead or day-ahead energy markets. As for air quality, the potential impact on nearby regions caused by some certain air pollution sources at different locations can be evaluated by using future wind data.\\
+
+Statistical approaches are generally good for short term and very short-term predictions (seconds to 6 hours ahead).  However, the medium (6 hours to 1 day ahead) and long term (1 day to 1 week or more ahead) bring more challenges.  On the other hand, the physical approach, Numeric Weather Prediction (NWP), can predict medium term and long term wind by solving complex physical-mathematical models with many data such as temperature, pressure, surface roughness, and buildings.  But supercomputers are needed for this approach.  And the simulations were run once or twice a day due to the difficulty of obtaining information in short time.  Therefore, it will be very useful if good statistical methods for medium or even long term prediction could be developed because they are much cheaper and faster than the physical approach.\\
+
+In order to achieve the project goal, the 5-year time series wind data of a number of stations in the NY state [1] will be used.  Hourly wind speed, direction, temperature, cloud, and many other features are available.  By reviewing few but highly related work [2-5], this data-set should be enough.  One published method would be repeated and possible improvement could be made later, which means the goal of the project would likely be achieved.\\
+
+\subsection*{Reference}
+\begin{enumerate}
+ \item Website of the Data: https://mesonet.agron.iastate.edu/request/download.phtml
+ \item Kavasseri, R. G., \& Seetharaman, K. (2009). Day-ahead wind speed forecasting using f-ARIMA models. Renewable Energy, 34(5), 1388-1393.
+ \item El-Fouly, T. H., El-Saadany, E. F., \& Salama, M. M. (2008). One day ahead prediction of wind speed and direction. IEEE Transactions on Energy Conversion, 23(1), 191-201.
+ \item El-Fouly, T. H. M., El-Saadany, E. F., \& Salama, M. M. A. (2006, June). One day ahead prediction of wind speed using annual trends. In 2006 IEEE Power Engineering Society General Meeting (pp. 7-pp). IEEE.
+ \item Khan, A. A., \& Shahidehpour, M. (2009, March). One day ahead wind speed forecasting using wavelets. In Power Systems Conference and Exposition, 2009. PSCE'09. IEEE/PES (pp. 1-5). IEEE.
+\end{enumerate}
+\end{document}
